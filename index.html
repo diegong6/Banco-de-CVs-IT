@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="reclutador, selección, personal, IT, recruiter, recruiting, selector, banco, cv, enviar cv, curriculum, vitae, trabajos, empleos, desarrollador, developer">
+    <meta name="description" content="BANCO DE CVs PERSONAL IT">
+    <link rel="shortcut icon" href="./imgs/logocorona.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>BANCO DE CVs IT</title>
+</head>
+
+<body>
+    <div class="intro1">
+        <img class="fade-in img-intro" src="./imgs/giphy.gif" alt="icon">
+    </div>
+    <header class="encabezado1">
+
+        <nav class="navbar nav1">
+            <h1>BANCO DE CVs PERSONAL IT</h1>
+            <a href="./index.html">
+                <div class="btn-lg color-b1">INICIO</div>
+            </a>
+            <div onclick="limpiar()" class="btn-lg color-b2">RESETEAR FORMULARIO</div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container-fluid">
+            <br>
+            <form action="https://formsubmit.co/diegon.villegas@gmail.com" method="POST" enctype="multipart/form-data"
+                class="row">
+                <div class="formunew">
+                    <div class="col-md-12">
+                        <label for="name" class="form-label textoform">Nombre completo:</label>
+                        <input type="text" name="name" class="form-control textoform1" id="name"
+                            placeholder="Tu Nombre..." required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="email" class="form-label textoform">Email:</label>
+                        <input type="email" name="email" class="form-control textoform1" id="email"
+                            placeholder="Tu Email..." required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="number" class="form-label textoform">Teléfono:</label>
+                        <input type="number" name="number" class="form-control textoform1" id="number"
+                            placeholder="Tu Número de telefono..." required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="pais" class="form-label textoform">País:</label>
+                        <select class="textoform1" name="pais" id="pais" required>
+                            <option name="pais" id="pais" class="textoform1">Argentina</option>
+                            <option name="pais" id="pais" class="textoform1">Bolivia</option>
+                            <option name="pais" id="pais" class="textoform1">Brasil</option>
+                            <option name="pais" id="pais" class="textoform1">Chile</option>
+                            <option name="pais" id="pais" class="textoform1">Colombia</option>
+                            <option name="pais" id="pais" class="textoform1">Ecuador</option>
+                            <option name="pais" id="pais" class="textoform1">Paraguay</option>
+                            <option name="pais" id="pais" class="textoform1">Perú</option>
+                            <option name="pais" id="pais" class="textoform1">Uruguay</option>
+                            <option name="pais" id="pais" class="textoform1">Venezuela</option>
+                            <option name="pais" id="pais" class="textoform1">Otros...</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="file" class="form-label textoform">Tu CV: <br> (pdf, jpg, jpeg, png. Max
+                            5mb)</label>
+                        <input class="form-control" type="file" name="file" id="file"
+                            accept="image/png, image/jpeg, image/jpg, image/pdf" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="coments" class="form-label textoform">Comentarios:</label>
+                        <textarea name="coments" class="form-control textoform1" id="coments" rows="3"
+                            placeholder="Deja tu consulta aquí..." required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button id="enviar" type="submit" value="enviar" class="btn btn-outline-success">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/secondpage.html">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h5 class=" contact-p">Para más información: diegon.villegas@gmail.com</h5>
+        <hr>
+        <p class="  contact-p">2023 © DiegoVillegas - Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
